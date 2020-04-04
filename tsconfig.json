@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noEmit": true, // we use ts-node, so no need to write out intermediate .js files
+    "strict": true
+  }
+}
