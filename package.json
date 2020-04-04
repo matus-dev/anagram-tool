@@ -16,5 +16,9 @@
     "pretty-quick": "^2.0.1",
     "ts-jest": "^25.3.1",
     "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest --testMatch='**/*.test.ts'"
   }
 }
