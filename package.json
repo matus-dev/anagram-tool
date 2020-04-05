@@ -6,12 +6,16 @@
   "author": "matus-dev <dudic.matus@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/bluebird": "^3.5.30",
     "@types/jest": "^25.2.1",
+    "@types/line-reader": "^0.0.28",
     "jest": "^25.2.7",
+    "line-reader": "^0.4.0",
     "ts-node": "^8.8.1",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@types/node": "^13.11.0",
     "prettier": "^2.0.2",
     "pretty-quick": "^2.0.1",
     "ts-jest": "^25.3.1",
