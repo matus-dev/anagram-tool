@@ -1,5 +1,5 @@
-import lineReader = require('line-reader');
-import fs = require('fs');
+import * as lineReader from 'line-reader';
+import * as fs from 'fs';
 
 export async function fileReader(path: string, callBack: any): Promise<any> {
   if (!fs.existsSync(path)) {
