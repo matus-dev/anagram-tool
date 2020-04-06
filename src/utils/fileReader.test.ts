@@ -1,4 +1,4 @@
-import { fileStreamer } from './fileStremer';
+import { fileReader } from './fileReader';
 
 describe('file streamer', () => {
   let allWords: Array<string[]> = [];
@@ -6,11 +6,11 @@ describe('file streamer', () => {
     allWords.push(wordsArray);
   }
 
-  it('reads words in a given file line by line and returns array of words of same length', async () => {
+  it('reads words in a given file line by line and returns array of words of the same length', async () => {
     const path = 'task/data/example1.txt';
     const expectedOutput: Array<string[]> = [['abc', 'fun', 'bac', 'fun', 'cba', 'unf'], ['hello']];
 
-    await fileStreamer(path, concatWordsArray);
+    await fileReader(path, concatWordsArray);
     expect(allWords).toStrictEqual(expectedOutput);
   });
 });

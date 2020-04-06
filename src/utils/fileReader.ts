@@ -1,7 +1,7 @@
 import lineReader = require('line-reader');
 import fs = require('fs');
 
-export async function fileStreamer(path: string, callBack: any): Promise<any> {
+export async function fileReader(path: string, callBack: any): Promise<any> {
   if (!fs.existsSync(path)) {
     throw new Error(`No file at location: ${path}`);
   }
