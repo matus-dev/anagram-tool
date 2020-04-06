@@ -14,7 +14,7 @@ program.version('0.0.1');
 
 program
   .command('get-anagrams <filePath>')
-  .description('get anagrams tool')
+  .description('get anagrams in a file')
   .action(async (filePath) => {
     await fileReader(filePath, printAnagrams);
   });
