@@ -11,13 +11,11 @@ export function anagram(words: string[]): Array<string[]> {
     const sortedWord = words[index].split('').sort().join();
 
     if (groupedWords[sortedWord]) {
-      groupedWords[sortedWord].words.push(words[index]);
+      groupedWords[sortedWord].push(words[index]);
     } else {
-      groupedWords[sortedWord] = {
-        words: [words[index]],
-      };
+      groupedWords[sortedWord] = [words[index]];
     }
   }
 
-  return _.map(groupedWords, 'words');
+  return _.map(groupedWords);
 }
